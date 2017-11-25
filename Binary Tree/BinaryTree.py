@@ -26,6 +26,14 @@ def preOrder(root):
 
     return res
 
+# Pre-order Traversal in a Binary Tree : {Recursive Approach}
+def preOrderRec(root) :
+    if not root:
+        return
+    print(root.value)
+    print(preOrder(root.left))
+    print(preOrder(root.right))
+    return
 # Post-order Traversal in a Binary Tree : left,right,root {Recursive approach}
 def postOrder(root):
     if root :
@@ -50,3 +58,8 @@ print(preOrder(root))
 
 #printing the post-order Traversal
 print(postOrder(root))
+
+#printing the recursive aoorach for pre-order
+print("The pre-order traversal as follows")
+preOrderRec(root)
+
