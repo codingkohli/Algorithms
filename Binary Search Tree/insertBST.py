@@ -6,7 +6,7 @@ self.data (the value of the node)"""
 
 def insert(r,val):
     if not r :
-        r = None(val)
+        r = Node(val)
         return r
     # the pointer where the value is to be inserted
     ptr = r
